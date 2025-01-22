@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaroopa's Portfolio</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: auto;
+            padding: 0%;
+            box-sizing: content-box;
+            background-color: beige;
+        }
+
+        header,
+        section,
+        footer {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        header {
+            background-color: #c59a9a;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            animation-delay: 0.5s;
+            /* Add a delay for the header */
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation-delay: 1s;
+            /* Adjust the delay for each section */
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation-delay: 1.5s;
+            /* Add a delay for the footer */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Portfolio </h1>
+    </header>
+    <section>
+        Hello there! I'm Pudhari Swaroopa, an 18-year-old passionate learner.
+        <br>
+    </section>
+    <main style="color: rosybrown;background: azure; ">
+        <section>
+            <b>Education:</b> Currently, I am pursuing a degree in Computer Science Engineering with a specialization in
+            AI & ML at CMR Institute of Technology(2023-2027). I completed my Intermediate education at PAGE Junior
+            College with a 95.1% score (2021-2023) and attended Johnson Grammar School, ICSE, where I achieved 89.8% in
+            10th grade (2021).
+        </section>
+        <section>
+            <b>Passions & Hobbies:</b> Beyond the professional arena, I am interested in drawing and painting, which
+            enhances my creativity skills.
+        </section>
+        <section>
+            <b>Goals:</b> Looking ahead, my goal is to work on exciting projects as I aspire to be a Software Developer.
+        </section>
+    </main>
+    <footer>
+        <h6>Contact:pudhariswaroopa.11@gmail.com
+            <br>
+            <b>LinkedIn:</b>
+            <a
+                href="https://www.linkedin.com/in/swaroopa-pudhari-101077291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                linkedin.com/in/swaroopa-pudhari </a>
+            <br>
+            <b>Github:</b><a href="https://github.com/PudhariSwaroopa"> github.com/PudhariSwaroopa</a>
+        </h6>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.animationDelay = `${1.5 + index * 0.5}s`; // Adjust the delay for each section
+            });
+        });
+    </script>
+</body>
+
+</html>

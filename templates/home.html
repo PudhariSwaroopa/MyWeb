@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home Page</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.jpg') }}" type="image/jpeg">
+
+  <style>
+
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(225, 228, 231);
+        background: linear-gradient(to right, rgb(65, 65, 65), rgb(1, 1, 1));
+        background-color: rgb(19, 17, 17);
+        margin: 0;
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgb(0, 0, 24);
+        padding: 20px 0;
+        text-align: left;
+        color: white;
+        padding-left: 20px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-btn {
+        background-color: #333;
+        color: white;
+        padding: 14px 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #111;
+    }
+
+    li.dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .jumbotron {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 40px;
+        border-radius: 10px;
+        color: #f0f0f0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .jumbotron h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Pudhari Swaroopa</h1>
+    </div>
+
+  <ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/portfolio">My Portfolio</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li class="dropdown">
+      <button class="dropdown-btn">My Hobbies</button>
+      <div class="dropdown-content">
+        <a href="#">Drawing</a>
+        <a href="#">Painting</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="container jumbotron">
+    <h1>Hello!</h1>
+    <p>Hi, I'm Pudhari Swaroopa, a student at CMR Institute of Technology in Hyderabad, currently pursuing my passion for Artificial Intelligence and Machine Learning. Hailing from Secunderabad, I believe in putting my heart and soul into anything I love, and once I commit to something, I work relentlessly to see it through. In my free time, I find peace and joy in drawing and painting, which helps me relax and unwind. My ultimate goal is to become an AI engineer, and it's my stubborn thoughts and determination that continuously drive me toward this dream. I’m excited to continue exploring the world of technology and creativity!</p>
+  </div>
+
+</body>
+
+</html>
